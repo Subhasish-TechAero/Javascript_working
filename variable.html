@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable project</title>
+    <style>
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+            color: rgb(17, 16, 15);
+            background-color: rgb(56, 255, 179);
+        }
+    </style>
+</head>
+<body>
+    <button onclick="console.log(`cart quantity: ${quantity}`)">show quantity</button>
+    <button onclick="quantity++; console.log(`cart quantity: ${quantity}`)">Add to cart</button>
+    <button onclick="quantity += 2; console.log(`cart quantity: ${quantity}`)">+2</button>
+    <button onclick="quantity += 3; console.log(`cart quantity: ${quantity}`)">+3</button>
+    <button onclick="quantity = 0; console.log(`cart quantity: ${quantity}`)">Reset cart</button>
+</body>
+<script>
+    let quantity = 0;
+</script>
+</html>
